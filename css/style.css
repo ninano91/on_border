@@ -161,8 +161,17 @@ header .h_right nav .gnb>li>.sub>li:hover>a{
     position: relative;
     left: 0;
     top: 0;
-
 }
+.slide>h2{
+    text-indent: -9999px;
+    color: transparent;
+}
+
+.slide .slide_menu>h3{
+    text-indent: -9999px;
+    color: transparent;
+}
+
 @keyframes slide_moving{
     0% {
         transform: rotate(5deg);
@@ -285,7 +294,6 @@ header .h_right nav .gnb>li>.sub>li:hover>a{
 
 .slide h2 {
     padding-top: 130px;
-    /* padding-right: 30px; */
     font-family: 'Noto Sans KR', sans-serif; 
 }
 
@@ -342,21 +350,21 @@ header .h_right nav .gnb>li>.sub>li:hover>a{
     margin-bottom: 140px;
 }
 
-.favor_menu h1 {
+.favor_menu h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.favor_menu h1 a {
+.favor_menu h2 a {
     display: block;
 }
 
-.favor_menu h1 a img {
+.favor_menu h2 a img {
     width: 300px;
     height: auto;
 }
 
-.favor_menu h2 {
+.favor_menu h3 {
     font-family: 'Noto Sans KR', sans-serif; 
     font-size: 22px;
     margin-bottom: 20px;
@@ -472,6 +480,9 @@ header .h_right nav .gnb>li>.sub>li:hover>a{
     width: 100%;
     height: 1500px;
     margin-bottom: 80px;
+}
+.intro h2{
+    text-indent: -9999px;
 }
 
 .intro .info {
@@ -635,9 +646,13 @@ margin-bottom: 130px;
     margin-bottom: 200px;
     margin: 0 auto;
 }
+.shop>h2{
+    text-indent: -9999px;
+}
 .shop .store{ 
     padding-top: 100px;
 }
+
 .shop .store h2{
     font-family: 'Noto Sans KR', sans-serif; 
     font-size: 22px;
@@ -645,9 +660,11 @@ margin-bottom: 130px;
     margin-left: 20px;
     font-weight: 600;
 }
-.shop .store h2 ul{ 
+.shop .store .map ul{ 
     text-align: center;
-    padding-left: 40px;
+    display: flex;
+    justify-content: space-around;
+
 }
 .shop .store ul li{
     background-color: #661417;
@@ -656,11 +673,9 @@ margin-bottom: 130px;
     border-radius: 20px;
     font-size: 16px;
     padding: 10px 20px;
-    margin-right: 25px;
     margin-bottom: 20px;
     border: 1px solid #661417;
     box-sizing: border-box;
-
 }
 
 .shop .store ul li:hover{
@@ -676,6 +691,9 @@ margin-bottom: 130px;
 }
 .map {
     margin-left: 40px;
+}
+.map iframe{
+    margin-left: 30px;
 }
 
 footer{
